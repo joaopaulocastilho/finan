@@ -9,10 +9,12 @@
     <form method="post">
         <input type="text" name="buylocal" placeholder="Local da compra"/><br>
         <input type="date" name="buydate" placeholder="Data da compra"/><br>
+        <input type="hidden" id="counter"/>
         <br>
-        <input type="button" value="+ Produtos" onclick="addItem(1)"/><br>
-        <input type="submit" value="Salvar compra"/><br>
+        <input type="button" value="+ Produtos" onClick="addItem()"/><br>
+
         <span id="itemsList">&nbsp;</span>
+        <input type="submit" value="Salvar compra"/><br>
     </form>
 </body>
 </html>

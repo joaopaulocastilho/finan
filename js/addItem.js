@@ -1,4 +1,6 @@
-function addItem(number) {
+function addItem() {
+    var number = document.getElementById("counter").value++;
+    
     var name  = document.createElement("input");
     var quantity  = document.createElement("input");
     var price  = document.createElement("input");
@@ -16,10 +18,10 @@ function addItem(number) {
     price.setAttribute("placeholder", "Preço por unidade ou kgs");
 
     var items = document.getElementById("itemsList");
-
     items.appendChild(name);
     items.appendChild(quantity);
     items.appendChild(price);
     items.appendChild(document.createElement("br"));
 
+    document.getElementById("counter").value = ++number;
 }
